@@ -149,4 +149,4 @@ If installed via Homebrew, completions are handled automatically. For manual set
 
   
 
-- [pgcli](https://www.pgcli.com/) (recommended) or `psql`.
+- aws cli.
