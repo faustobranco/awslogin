@@ -14,7 +14,7 @@ import (
 	"gopkg.in/ini.v1"
 )
 
-const version = "1.0.0"
+const version = "1.0.1"
 
 // Profile represents the AWS profile data
 type Profile struct {
@@ -215,7 +215,7 @@ func selectProfile(profiles []Profile) (string, error) {
 		Label:     "Select Profile",
 		Items:     profiles,
 		Templates: templates,
-		Size:      10,
+		Size:      20,
 		Searcher: func(input string, index int) bool {
 			p := profiles[index]
 			content := fmt.Sprintf("%s %s %s", p.Name, p.Account, p.Role)
